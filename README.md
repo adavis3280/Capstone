@@ -49,7 +49,8 @@ Data from fangraphs and statcast were merged to create databases with each row c
 
 Data mentioned above from fangraphs and statcast were merged into the events database, mlb_PA_2013to2018.csv in FinalMLBDatabaseCreation.ipynb, so that each event had a pitcher statline for the season of the event attached, as well as a mirroring hitter statline.
 
-## Final cleaned data saved to mlbxdb.csv
+ Final cleaned data will be saved to mlbxdb.csv in the data folder after running through the Fangraphsdataclean.ipynb and the FinalMLBDatabaseCreation.ipynb
+
 
 ## Model/Evaluate the Data
 A large neural network from the Keras library was compiled and fit in NNetFitFunctioCreation.ipynb. The 'Softmax' multiclassifier was used to give each potential at bat outcome a probability. Parameters of this model are still being changed and could potentially require tuning.
