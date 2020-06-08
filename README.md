@@ -1,4 +1,4 @@
-#Creating an MLB At-Bat Simulator
+##Creating an MLB At-Bat Simulator
 
 The goals of this repository were to create a model and resulting function capable of simulating Major League Baseball (MLB) at-bats given a pitcher and a hitter and their relevant statistics.
 
@@ -15,7 +15,7 @@ Keras
 
 ## Steps Involved
 
-#Gather Data
+##Gather Data
 Data was gathered from a number of sources of baseball data is widely available.
 
 Play by play data to determine at bat outcomes was obtained from retrosheet.org and from mlb.com's database. The database contains every at bat from 2013-2018 in all Major League Baseball
@@ -36,7 +36,7 @@ https://www.retrosheet.org/game.htm
 https://baseballsavant.mlb.com/statcast_leaderboard
 
 
-#Exploratory Data Analysis
+##Exploratory Data Analysis
 
 The primary focus of this section was to attach the appropriate statistical data to each row in the events/outcomes database from mlb.com.
 
@@ -49,12 +49,12 @@ Data from fangraphs and statcast were merged to create databases with each row c
 
 Data mentioned above from fangraphs and statcast were merged into the events database, mlb_PA_2013to2018.csv in FinalMLBDatabaseCreation.ipynb, so that each event had a pitcher statline for the season of the event attached, as well as a mirroring hitter statline.
 
-#Final cleaned data saved to mlbxdb.csv
+##Final cleaned data saved to mlbxdb.csv
 
-# Model/Evaluate the Data
+## Model/Evaluate the Data
 A large neural network from the Keras library was compiled and fit in NNetFitFunctioCreation.ipynb. The 'Softmax' multiclassifier was used to give each potential at bat outcome a probability. Parameters of this model are still being changed and could potentially require tuning.
 
-#Create the function
+##Create the function
 
 Two functions were created in this step in NNetFitFunctioCreation.ipynb.
 
